@@ -11,7 +11,7 @@ interface Props {
 
 let finished = false
 const symbols = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,"^`\'. '
-const fps = 60
+const fps = 5
 
 const AsciiTheater = ({ customStyles, framesDir, framesCount, loop, width, height }: Props) => {
   const canvas = useRef<HTMLCanvasElement>(null)

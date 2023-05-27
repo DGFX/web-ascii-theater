@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import AsciiTheater from './components/AsciiTheater/AsciiTheater'
 import './App.css'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('ascii') as HTMLElement).render(
   <React.StrictMode>
     <div
       className="App"
@@ -17,8 +17,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <AsciiTheater
         width={80}
         height={50}
-        framesDir={'/frames'}
-        framesCount={5478}
+        framesDir={'http://localhost:5173/public/example'}
+        framesCount={474}
         customStyles={{
           fontSize: '12px',
           width: 'fit-content',
